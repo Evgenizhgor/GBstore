@@ -1,0 +1,228 @@
+.header {
+  background: #222222;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.center {
+  padding-left: calc(50% - 570px);
+  padding-right: calc(50% - 570px);
+}
+.search {
+  margin-left: 41px;
+}
+.header_right img:not(:last-child) {
+  margin-right: 33px;
+}
+.promo {
+  background: #f1e4e6;
+  display: flex;
+  padding-left: calc(50% - 800px);
+  padding-right: calc(50% - 800px);
+}
+.promo_img {
+  width: 50%;
+  display: flex;
+}
+.promo_txt {
+  width: 50%;
+}
+.mate {
+  width: 100%;
+}
+.promo_content {
+  margin-top: 40%;
+  border-left: 12px solid #f16d7f;
+  padding-left: 18px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.promo_heading {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 58px;
+}
+.promo_para {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  height: 38px;
+  color: #222222;
+}
+
+.dsl {
+  color: #f16d7f;
+}
+.sale {
+  padding-top: 54px;
+  padding-bottom: 96px;
+}
+.top {
+  display: flex;
+
+  padding-bottom: 30px;
+}
+.top_img {
+  width: 100%;
+}
+.sale_item:not(:last-child) {
+  margin-right: 30px;
+}
+.sale_item {
+  position: relative;
+}
+.sale_text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.big_sale {
+  position: relative;
+}
+.sale_p {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Lato";
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: normal;
+}
+.sale_h {
+  color: #f16d7f;
+  font-family: "Lato";
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  font-weight: bold;
+}
+.price_head {
+  font-family: "Lato";
+  font-size: 30px;
+  text-align: center;
+}
+.price_p {
+  font-family: "Lato";
+
+  text-align: center;
+  color: #9f9f9f;
+}
+.price {
+  padding-bottom: 46px;
+}
+.modniki {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.modnik_item {
+  gap: 30px;
+  position: relative;
+  width: 360px;
+  background-color: #f8f8f8;
+  font-family: "Lato";
+}
+.wall {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 16px;
+}
+.pricez {
+  color: #f16d7f;
+  line-height: 20px;
+}
+.modnik_txt {
+  padding: 28px 16px 20px;
+}
+.description_price {
+  margin-top: 12px;
+  margin-bottom: 18px;
+  font-size: 14px;
+  font-weight: 300;
+  color: #5d5d5d;
+}
+.modnik_button {
+  display: flex;
+  justify-content: center;
+  height: 47px;
+  width: 211px;
+  border: 1px solid;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  color: #f26376;
+}
+.modnik_footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.modnik_button:hover {
+  color: white;
+  background: #f26376;
+  border-color: #f26376;
+}
+.item_img {
+  width: 100%;
+}
+.personal_info {
+  display: flex;
+  background: #222224;
+  height: 341px;
+}
+.header_personal {
+  color: #fbfbfb;
+  font-family: "Lato";
+  font-size: 19.9px;
+  margin-top: 28px;
+}
+.personal_text {
+  display: flex;
+  width: 100%;
+
+  justify-content: space-between;
+  align-items: center;
+}
+.personal_body {
+  color: #fbfbfb;
+  font-family: "Lato";
+  font-size: 14px;
+  margin-top: 28px;
+}
+article {
+  text-align: center;
+  width: 360px;
+  height: 134px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.beachback {
+  position: relative;
+  height: 448px;
+}
+.beachup {
+  position: absolute;
+  height: 448px;
+}
+.subscribe {
+  height: 448px;
+
+  background: url(img/photo/photobeach.png) bottom;
+  background-size: cover;
+}
