@@ -298,4 +298,16 @@ article {
   justify-content: center;
 }
 .contact_us {
+  background: #222224;
+  display: flex;
+}
+.aiirights_p {
+  color: #fbfbfb;
+}
+.social_left {
+}
+.social_right {
+}
+.social_button {
+  background: #ffffff;
 }
