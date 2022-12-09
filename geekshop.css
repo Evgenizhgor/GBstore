@@ -300,14 +300,32 @@ article {
 .contact_us {
   background: #222224;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 79px;
 }
 .aiirights_p {
   color: #fbfbfb;
 }
 .social_left {
+  font-family: "Lato";
 }
 .social_right {
+  display: flex;
 }
 .social_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 31.45px;
+  height: 32px;
+  fill: #000000;
   background: #ffffff;
+}
+.social_button:not(:last-child) {
+  margin-right: 8px;
+}
+.social_button:hover {
+  background: #f16d7f;
+  fill: #ffffff;
 }
