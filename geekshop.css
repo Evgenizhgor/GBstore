@@ -21,6 +21,11 @@
   align-items: center;
   list-style-type: none;
 }
+.menu_button {
+  display: block;
+  cursor: pointer;
+  width: fit-content;
+}
 .promo {
   background: #f1e4e6;
   display: flex;
