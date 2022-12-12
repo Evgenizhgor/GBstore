@@ -26,11 +26,22 @@
   cursor: pointer;
   width: fit-content;
 }
-.promo {
+.promo,
+.page_title {
   background: #f1e4e6;
   display: flex;
   padding-left: calc(50% - 800px);
   padding-right: calc(50% - 800px);
+}
+.page_title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.new_arriv {
+  font-family: "Lato";
+  color: #f26376;
+  font-weight: 400;
 }
 .promo_img {
   width: 50%;
