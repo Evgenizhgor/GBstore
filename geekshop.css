@@ -13,8 +13,13 @@
 .search {
   margin-left: 20px;
 }
-.header_right img:not(:last-child) {
+.header_right li:not(:last-child) {
   margin-right: 33px;
+}
+.header_right {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
 }
 .promo {
   background: #f1e4e6;
