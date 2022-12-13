@@ -30,10 +30,18 @@
   text-decoration: none;
   color: #636363;
 }
-.header_location_list > .nav_list + .nav_list :before {
+.nav_list {
+  display: flex;
+}
+.nav_list:not(:first-of-type)::before {
   padding: 0 5px;
   color: #ccc;
   content: "/\00a0";
+}
+.header_location_list {
+  display: flex;
+  list-style-type: none;
+  width: 100%;
 }
 
 .new {
@@ -367,11 +375,7 @@ article {
 .header_location {
   display: flex;
 }
-.header_location_list {
-  display: flex;
-  list-style-type: none;
-  width: 100%;
-}
+
 .nav_list {
   font-family: "Lato";
 }
