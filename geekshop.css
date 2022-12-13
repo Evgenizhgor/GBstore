@@ -26,8 +26,20 @@
   cursor: pointer;
   width: fit-content;
 }
-.promo,
-.page_title {
+.link_nav {
+  text-decoration: none;
+  color: #636363;
+}
+.header_location_list > .nav_list + .nav_list :before {
+  padding: 0 5px;
+  color: #ccc;
+  content: "/\00a0";
+}
+
+.new {
+  color: #f16d7f;
+}
+.promo {
   background: #f1e4e6;
   display: flex;
   padding-left: calc(50% - 800px);
@@ -37,6 +49,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 148px;
+  background: #f1e4e6;
 }
 .new_arriv {
   font-family: "Lato";
@@ -349,4 +363,15 @@ article {
 .social_button:hover {
   background: #f16d7f;
   fill: #ffffff;
+}
+.header_location {
+  display: flex;
+}
+.header_location_list {
+  display: flex;
+  list-style-type: none;
+  width: 100%;
+}
+.nav_list {
+  font-family: "Lato";
 }
