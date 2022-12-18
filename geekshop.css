@@ -38,6 +38,7 @@
 .features_block {
   display: flex;
 }
+
 .filter {
   width: 35%;
   font-weight: 600;
@@ -67,6 +68,7 @@
 }
 .product_search {
   display: flex;
+  width: 65%;
 }
 details > summary {
   list-style: none;
