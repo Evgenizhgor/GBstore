@@ -30,6 +30,20 @@
   text-decoration: none;
   color: #636363;
 }
+.features {
+  display: flex;
+  padding-top: 51px;
+  padding-bottom: 64px;
+}
+.filter {
+  width: 35%;
+}
+.product_search {
+  display: flex;
+}
+details > summary {
+  list-style: none;
+}
 .nav_list {
   display: flex;
 }
