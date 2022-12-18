@@ -35,8 +35,35 @@
   padding-top: 51px;
   padding-bottom: 64px;
 }
+.features_block {
+  display: flex;
+}
 .filter {
   width: 35%;
+  font-weight: 600;
+  font-family: "Lato";
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+.filter_button {
+  padding-left: 10px;
+}
+.features_button {
+  cursor: pointer;
+}
+.feature_text {
+  margin-right: 10px;
+}
+.features_list {
+  margin-right: 27px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6f6e6e;
+  list-style-type: none;
 }
 .product_search {
   display: flex;
