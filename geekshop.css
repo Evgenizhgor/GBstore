@@ -248,21 +248,49 @@ details > summary {
 }
 .modniki {
   display: flex;
-  justify-content: space-between;
+
   flex-wrap: wrap;
   gap: 30px;
 }
+.modnik_item :hover .item_img {
+  filter: brightness(40%);
+}
 .modnik_item {
-  gap: 30px;
   position: relative;
   width: 360px;
   background-color: #f8f8f8;
   font-family: "Lato";
 }
+.modnik_add {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 138px;
+  height: 44px;
+  border: 1px solid #fff;
+  text-decoration: none;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+  position: absolute;
+  top: 188px;
+  left: 111px;
+}
+.modnik_add:hover {
+  box-shadow: 0 0 7px #fff;
+}
+.modnik_item:hover .modnik_add {
+  display: flex;
+}
 .wall {
   font-size: 15px;
   font-weight: 400;
   line-height: 16px;
+  text-decoration: none;
+  color: #000000;
 }
 .pricez {
   color: #f16d7f;
