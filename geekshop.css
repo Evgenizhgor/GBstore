@@ -252,14 +252,13 @@ details > summary {
   flex-wrap: wrap;
   gap: 30px;
 }
-.modnik_item :hover .item_img {
+.modnik_item:hover .item_img {
   filter: brightness(40%);
 }
 .modnik_item {
   position: relative;
   width: 360px;
   background-color: #f8f8f8;
-  font-family: "Lato";
 }
 .modnik_add {
   display: none;
@@ -285,12 +284,20 @@ details > summary {
 .modnik_item:hover .modnik_add {
   display: flex;
 }
+.modnik_add::before {
+  padding-right: 11px;
+  content: url(img/icons/shopper.svg);
+}
+.modnik_img {
+  width: 100%;
+}
 .wall {
   font-size: 15px;
   font-weight: 400;
   line-height: 16px;
   text-decoration: none;
   color: #000000;
+  font-family: "Lato";
 }
 .pricez {
   color: #f16d7f;
@@ -305,6 +312,7 @@ details > summary {
   font-size: 14px;
   font-weight: 300;
   color: #5d5d5d;
+  font-family: "Lato";
 }
 .modnik_button {
   display: flex;
