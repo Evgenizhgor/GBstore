@@ -546,7 +546,7 @@ article {
   padding-top: 15px;
   padding-bottom: 39px;
   width: 360px;
-  font-family: Lato;
+
   font-style: normal;
   font-weight: 300;
   font-size: 13px;
@@ -569,4 +569,29 @@ article {
   font-weight: 300;
   font-size: 24px;
   line-height: 24.4px;
+  padding-bottom: 21px;
+}
+.reg_text {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  /* identical to box height */
+  padding-bottom: 22px;
+  color: #000000;
+}
+.loyal_description {
+  display: flex;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  padding-bottom: 16px;
+  color: #000000;
+}
+.ok {
+  margin-right: 23px;
+}
+.reg_loyal {
+  display: flex;
 }
