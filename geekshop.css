@@ -500,6 +500,19 @@ article {
   background: #f8f3f4;
   display: flex;
   align-items: center;
+  margin-bottom: 64px;
+}
+
+.regform_main {
+  font-family: "Lato";
+  padding-bottom: 96px;
+}
+.gender {
+  border: none;
+}
+.reg_name {
+  padding-bottom: 20px;
+  font-family: "Lato";
 }
 .nav_title {
   font-family: "Lato";
@@ -509,8 +522,12 @@ article {
   color: #f16d7f;
   position: absolute;
 }
+.reg_right {
+  width: 652px;
+}
 .regform_main {
   display: flex;
+  justify-content: space-between;
 }
 .gender_radio:not(:first-child) {
   margin-left: 20px;
@@ -523,4 +540,33 @@ article {
   height: 50px;
   background: #f16d7f;
   border: none;
+  text-align: center;
+}
+.reg_description {
+  padding-top: 15px;
+  padding-bottom: 39px;
+  width: 360px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #b1b1b1;
+}
+
+.registration_item {
+  width: 360px;
+  height: 46px;
+  margin-bottom: 21px;
+}
+
+.reg_left {
+  display: flex;
+  flex-direction: column;
+}
+.reg_p_text {
+  font-family: "Lato";
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 24.4px;
 }
