@@ -509,3 +509,18 @@ article {
   color: #f16d7f;
   position: absolute;
 }
+.regform_main {
+  display: flex;
+}
+.gender_radio:not(:first-child) {
+  margin-left: 20px;
+}
+.gender_choose {
+  margin-right: 10px;
+}
+.reg_submit {
+  width: 167px;
+  height: 50px;
+  background: #f16d7f;
+  border: none;
+}
