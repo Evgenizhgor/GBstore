@@ -509,10 +509,23 @@ article {
 }
 .gender {
   border: none;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 13px;
+  margin-bottom: 23px;
+  margin-top: 10px;
+  color: #000000;
 }
 .reg_name {
   padding-bottom: 20px;
   font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #222222;
 }
 .nav_title {
   font-family: "Lato";
@@ -557,9 +570,18 @@ article {
 .registration_item {
   width: 360px;
   height: 46px;
+  border: 1px solid #a4a4a4;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  /* identical to box height */
+  color: #b1b1b1;
+  padding-left: 17px;
+}
+.registration_item:not(:last-of-type) {
   margin-bottom: 21px;
 }
-
 .reg_left {
   display: flex;
   flex-direction: column;
@@ -594,4 +616,12 @@ article {
 }
 .reg_loyal {
   display: flex;
+}
+.registration_contact {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  padding-bottom: 18px;
+  color: #222222;
 }
