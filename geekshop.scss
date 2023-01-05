@@ -1,4 +1,6 @@
-.header {
+$colorSelect: #f1e4e6;
+$colorStyle: #f16d7f;
+header {
   background: #222222;
   height: 75px;
   display: flex;
@@ -125,10 +127,10 @@ details > summary {
 }
 
 .new {
-  color: #f16d7f;
+  color: $colorStyle;
 }
 .promo {
-  background: #f1e4e6;
+  background: $colorSelect;
   display: flex;
   padding-left: calc(50% - 800px);
   padding-right: calc(50% - 800px);
@@ -138,7 +140,7 @@ details > summary {
   align-items: center;
   justify-content: space-between;
   height: 148px;
-  background: #f1e4e6;
+  background: $colorSelect;
 }
 .new_arriv {
   font-family: "Lato";
@@ -157,7 +159,7 @@ details > summary {
 }
 .promo_content {
   margin-top: 40%;
-  border-left: 12px solid #f16d7f;
+  border-left: 12px solid $colorStyle;
   padding-left: 18px;
 }
 
@@ -182,7 +184,7 @@ details > summary {
 }
 
 .dsl {
-  color: #f16d7f;
+  color: $colorStyle;
 }
 .sale {
   padding-top: 54px;
@@ -225,7 +227,7 @@ details > summary {
   font-weight: normal;
 }
 .sale_h {
-  color: #f16d7f;
+  color: $colorStyle;
   font-family: "Lato";
   font-size: 24px;
   line-height: 29px;
@@ -300,7 +302,7 @@ details > summary {
   font-family: "Lato";
 }
 .pricez {
-  color: #f16d7f;
+  color: $colorStyle;
   line-height: 20px;
 }
 .modnik_txt {
@@ -438,7 +440,7 @@ article {
 }
 .submit_subs {
   border: none;
-  background: #f16d7f;
+  background: $colorStyle;
   border-radius: 0 25px 25px 0;
   width: 100px;
   height: 50px;
@@ -485,7 +487,7 @@ article {
   margin-right: 8px;
 }
 .social_button:hover {
-  background: #f16d7f;
+  background: $colorStyle;
   fill: #ffffff;
 }
 .header_location {
@@ -532,7 +534,7 @@ article {
   font-weight: 400;
   font-size: 24px;
   line-height: 28.8px;
-  color: #f16d7f;
+  color: $colorStyle;
   position: absolute;
 }
 .reg_right {
@@ -551,7 +553,7 @@ article {
 .reg_submit {
   width: 167px;
   height: 50px;
-  background: #f16d7f;
+  background: $colorStyle;
   border: none;
   text-align: center;
 }
