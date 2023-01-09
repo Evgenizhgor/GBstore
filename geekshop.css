@@ -43,23 +43,91 @@ header {
   display: flex;
   padding-top: 51px;
   padding-bottom: 64px;
+  position: relative;
 }
 
 .features_block {
   display: flex;
 }
 
+summary {
+  display: block;
+  list-style: none;
+  outline: none;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
 .filter {
+  padding: 13px 16px 16px;
   width: 35%;
-  font-weight: 600;
+  position: absolute;
+  z-index: 2;
+}
+.filter_button {
   font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
   font-size: 14px;
   line-height: 17px;
   color: #000000;
+  cursor: pointer;
+}
+.filter_img {
+  margin-left: 11px;
+  cursor: pointer;
+}
+.filter_category {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #f16d7f;
+  padding-left: 11px;
+  border-left: #f16d7f 4px solid;
+  border-bottom: 1px solid #ebebeb;
+  height: 37px;
+  line-height: 37px;
+  cursor: pointer;
 }
 
-.filter_button {
-  padding-left: 10px;
+.filter[open] .filter_button {
+  color: #f16d7f;
+}
+
+.filter[open] .filter_img {
+  fill: #f16d7f;
+}
+
+.filter_link:hover {
+  color: #f16d7f;
+}
+
+.filter[open] {
+  width: 360px;
+  box-sizing: border-box;
+  background: #ffffff;
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+}
+
+.filter_ul {
+  list-style-type: none;
+  padding-top: 36px;
+  padding-left: 11px;
+}
+
+.filter_link {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6f6e6e;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .features_button {
@@ -84,6 +152,7 @@ header {
 .product_search {
   display: flex;
   width: 65%;
+  padding-left: 304px;
 }
 
 details > summary {
@@ -298,12 +367,7 @@ details > summary {
 .modnik_item:hover .item_img {
   filter: brightness(40%);
 }
-.filter_ul {
-  list-style-type: none;
-}
-.filter_link {
-  text-decoration: none;
-}
+
 .modnik_item {
   position: relative;
   width: 360px;
@@ -446,8 +510,7 @@ article {
   justify-content: space-between;
   align-items: center;
 }
-
-.subscribe_left {
+.subscribe__left {
   font-family: "Lato";
   text-align: center;
   display: flex;
@@ -455,8 +518,7 @@ article {
   align-items: center;
   justify-content: center;
 }
-
-.subscribe_left_p {
+.subscribe__left_p {
   font-family: "Lato";
   width: 360px;
   font-style: normal;
@@ -466,18 +528,12 @@ article {
   padding-top: 40px;
   color: #222222;
 }
-
-.ital {
-  font-style: italic;
-}
-
-.subscribe_right {
+.subscribe__right {
   text-align: center;
   display: flex;
   flex-direction: column;
 }
-
-.subscribe_right_p {
+.subscribe__right_p {
   font-family: "Lato";
   display: flex;
   flex-direction: column;
@@ -485,6 +541,9 @@ article {
   font-size: 24px;
   line-height: 40.13px;
   padding-bottom: 32px;
+}
+.subscribe .ital {
+  font-style: italic;
 }
 
 .smaller {
@@ -724,4 +783,4 @@ article {
   line-height: 19px;
   padding-bottom: 18px;
   color: #222222;
-} /*# sourceMappingURL=geekshop.css.map */
+}/*# sourceMappingURL=geekshop.css.map */

@@ -37,46 +37,87 @@ header {
   display: flex;
   padding-top: 51px;
   padding-bottom: 64px;
+  position: relative;
 }
 .features_block {
   display: flex;
 }
 summary {
   display: block;
+  list-style: none;
   outline: none;
 }
-summary::before {
-  padding-right: 0.5em;
-  content: "\25B6";
-}
-details[open] > summary::before {
-  content: "\25BC";
-}
-.filter {
-  width: 35%;
-  font-weight: 600;
-  font-family: "Lato";
-  font-size: 14px;
-  line-height: 17px;
-  color: #000000;
 
-  &__ul {
-    list-style-type: none;
-  }
-  &__link {
+summary::-webkit-details-marker {
+  display: none;
+}
+
+.filter {
+  padding: 13px 16px 16px;
+  width: 35%;
+  position: absolute;
+  z-index: 2;
+  &_button {
     font-family: "Lato";
     font-style: normal;
-    font-weight: normal;
+    font-weight: 600;
     font-size: 14px;
     line-height: 17px;
-    color: #6f6e6e;
-    text-decoration: none;
+    color: #000000;
+    cursor: pointer;
   }
-
-  &:hover {
-    color: $colorstyle;
+  &_img {
+    margin-left: 11px;
+    cursor: pointer;
+  }
+  &_category {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: $colorStyle;
+    padding-left: 11px;
+    border-left: $colorStyle 4px solid;
+    border-bottom: 1px solid #ebebeb;
+    height: 37px;
+    line-height: 37px;
+    cursor: pointer;
   }
 }
+.filter[open] .filter_button {
+  color: $colorStyle;
+}
+.filter[open] .filter_img {
+  fill: $colorStyle;
+}
+.filter_link:hover {
+  color: $colorStyle;
+}
+
+.filter[open] {
+  width: 360px;
+  box-sizing: border-box;
+  background: #ffffff;
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+}
+
+.filter_ul {
+  list-style-type: none;
+  padding-top: 36px;
+  padding-left: 11px;
+}
+.filter_link {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6f6e6e;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .features_button {
   cursor: pointer;
 }
@@ -96,6 +137,7 @@ details[open] > summary::before {
 .product_search {
   display: flex;
   width: 65%;
+  padding-left: 304px;
 }
 details > summary {
   list-style: none;
