@@ -572,12 +572,13 @@ article {
   height: 46px;
   border: 1px solid #a4a4a4;
   font-style: normal;
-  font-weight: 300;
+  font-weight: normal;
   font-size: 13px;
   line-height: 16px;
   /* identical to box height */
   color: #b1b1b1;
   padding-left: 17px;
+  box-sizing: border-box;
 }
 .registration_item:not(:last-of-type) {
   margin-bottom: 21px;
