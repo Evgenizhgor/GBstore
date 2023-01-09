@@ -41,7 +41,17 @@ header {
 .features_block {
   display: flex;
 }
-
+summary {
+  display: block;
+  outline: none;
+}
+summary::before {
+  padding-right: 0.5em;
+  content: "\25B6";
+}
+details[open] > summary::before {
+  content: "\25BC";
+}
 .filter {
   width: 35%;
   font-weight: 600;
@@ -49,9 +59,23 @@ header {
   font-size: 14px;
   line-height: 17px;
   color: #000000;
-}
-.filter_button {
-  padding-left: 10px;
+
+  &__ul {
+    list-style-type: none;
+  }
+  &__link {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6f6e6e;
+    text-decoration: none;
+  }
+
+  &:hover {
+    color: $colorstyle;
+  }
 }
 .features_button {
   cursor: pointer;

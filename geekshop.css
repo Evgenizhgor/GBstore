@@ -298,7 +298,12 @@ details > summary {
 .modnik_item:hover .item_img {
   filter: brightness(40%);
 }
-
+.filter_ul {
+  list-style-type: none;
+}
+.filter_link {
+  text-decoration: none;
+}
 .modnik_item {
   position: relative;
   width: 360px;
@@ -719,4 +724,4 @@ article {
   line-height: 19px;
   padding-bottom: 18px;
   color: #222222;
-}/*# sourceMappingURL=geekshop.css.map */
+} /*# sourceMappingURL=geekshop.css.map */
