@@ -40,7 +40,8 @@ header {
   position: relative;
 }
 .features_block {
-  display: flex;
+  display: block;
+  position: relative;
 }
 summary {
   display: block;
@@ -133,6 +134,29 @@ summary::-webkit-details-marker {
   color: #6f6e6e;
   text-decoration: none;
   cursor: pointer;
+}
+.checkbox_size {
+  list-style-type: none;
+  background: #ffffff;
+  flex-direction: column;
+  position: absolute;
+  z-index: 2;
+  box-shadow: 6px 4px 35px rgb(0 0 0 / 21%);
+  width: 79px;
+  height: 103px;
+  padding-top: 10px;
+  display: flex;
+  padding-bottom: 7px;
+  left: -10px;
+  top: 22px;
+}
+.size_name {
+  padding-left: 22px;
+  padding-bottom: 10px;
+  display: flex;
+}
+.size_item {
+  padding-left: 5px;
 }
 
 .features_button {
