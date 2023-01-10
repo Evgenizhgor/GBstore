@@ -222,6 +222,9 @@ details > summary {
   font-size: 16px;
   font-family: "Lato";
 }
+.page:hover {
+  color: #f16d7f;
+}
 
 .central_content {
   display: flex;
@@ -247,6 +250,7 @@ details > summary {
   list-style-type: none;
   display: flex;
   align-items: center;
+  font-weight: 300;
 }
 
 .product_next {
@@ -254,6 +258,10 @@ details > summary {
   fill: #222222;
   display: flex;
   align-items: center;
+  cursor: pointer;
+}
+.product_next:hover {
+  fill: #f16d7f;
 }
 
 .header_location_list {

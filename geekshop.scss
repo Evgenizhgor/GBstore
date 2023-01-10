@@ -196,6 +196,9 @@ details > summary {
   line-height: 19.2px;
   font-size: 16px;
   font-family: "Lato";
+  &:hover {
+    color: $colorStyle;
+  }
 }
 .central_content {
   display: flex;
@@ -219,13 +222,20 @@ details > summary {
   list-style-type: none;
   display: flex;
   align-items: center;
+  font-weight: 300;
 }
 .product_next {
   list-style-type: none;
   fill: #222222;
   display: flex;
   align-items: center;
+  cursor: pointer;
+
+  &:hover {
+    fill: $colorStyle;
+  }
 }
+
 .header_location_list {
   display: flex;
   list-style-type: none;
