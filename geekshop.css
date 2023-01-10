@@ -60,10 +60,17 @@ summary::-webkit-details-marker {
   display: none;
 }
 
-.filter {
-  padding: 13px 16px 16px;
+.one {
   width: 35%;
-  position: absolute;
+}
+
+.two {
+  width: 65%;
+}
+
+.filter {
+  width: 35%;
+  position: relative;
   z-index: 2;
 }
 .filter_button {
@@ -74,6 +81,8 @@ summary::-webkit-details-marker {
   line-height: 17px;
   color: #000000;
   cursor: pointer;
+  position: absolute;
+  z-index: 5;
 }
 .filter_img {
   margin-left: 11px;
@@ -94,6 +103,17 @@ summary::-webkit-details-marker {
   cursor: pointer;
 }
 
+.filter_box {
+  position: absolute;
+  z-index: 1;
+  top: -10px;
+  left: -16px;
+  width: 300px;
+  background: white;
+  padding-top: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
 .filter[open] .filter_button {
   color: #f16d7f;
 }
@@ -107,10 +127,10 @@ summary::-webkit-details-marker {
 }
 
 .filter[open] {
-  width: 360px;
   box-sizing: border-box;
   background: #ffffff;
   box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  padding: 16px 13px 13px;
 }
 
 .filter_ul {
@@ -152,7 +172,6 @@ summary::-webkit-details-marker {
 .product_search {
   display: flex;
   width: 65%;
-  padding-left: 304px;
 }
 
 details > summary {
