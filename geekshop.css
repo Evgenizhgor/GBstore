@@ -7,6 +7,44 @@ header {
   justify-content: space-between;
 }
 
+.photo {
+  height: 724px;
+}
+
+.photo_select {
+  display: flex;
+  height: 777px;
+  justify-content: space-between;
+  align-items: center;
+  background: #f7f7f7;
+}
+
+.arrow_left {
+  background: rgba(42, 42, 42, 0.15);
+  width: 47px;
+  height: 47px;
+  fill: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.arrow_left:hover {
+  fill: #f16d7f;
+}
+
+.arrow_right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(42, 42, 42, 0.15);
+  width: 47px;
+  height: 47px;
+  fill: #000000;
+}
+.arrow_right:hover {
+  fill: #f16d7f;
+}
+
 .center {
   padding-left: calc(50% - 570px);
   padding-right: calc(50% - 570px);
