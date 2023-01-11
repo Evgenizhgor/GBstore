@@ -41,8 +41,7 @@ header {
     fill: #f16d7f;
   }
 }
-.main_content {
-}
+
 .center {
   padding-left: calc(50% - 570px);
   padding-right: calc(50% - 570px);
@@ -455,6 +454,7 @@ details > summary {
 .pricez {
   color: $colorStyle;
   line-height: 20px;
+  font-family: "Lato";
 }
 .modnik_txt {
   padding: 28px 16px 20px;
