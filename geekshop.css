@@ -543,6 +543,36 @@ details > summary {
   border: 1px solid #eaeaea;
 }
 
+.description_summ {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #f16d7f;
+}
+
+.description_price {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #5d5d5d;
+  margin-top: 12px;
+  margin-bottom: 18px;
+}
+
+.description_compellingly {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #5e5e5e;
+}
+
 .collection {
   font-family: "Lato";
   font-style: normal;
@@ -561,30 +591,35 @@ details > summary {
   margin-top: 12px;
   margin-bottom: 12px;
   background: #ef5b70;
+  width: 63px;
 }
 
 .divider_two {
   margin-top: 65px;
   margin-bottom: 65px;
+  width: 642px;
+  background: #eaeaea;
 }
 
-.collection {
+.cheap_bch {
   font-family: "Lato";
   font-style: normal;
   font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  color: #4d4d4d;
+}
+
+.description_filter {
+  display: flex;
+}
+
+.description_filter_point {
+  list-style-type: none;
 }
 
 .modnik_txt {
   padding: 28px 16px 20px;
-}
-
-.description_price {
-  margin-top: 12px;
-  margin-bottom: 18px;
-  font-size: 14px;
-  font-weight: 300;
-  color: #5d5d5d;
-  font-family: "Lato";
 }
 
 .modnik_button {
