@@ -404,6 +404,15 @@ details > summary {
   flex-wrap: wrap;
   gap: 30px;
 }
+.modniki_productpage {
+  display: flex;
+  padding-bottom: 98px;
+  padding-top: 680px;
+
+  flex-wrap: wrap;
+  gap: 30px;
+  padding-bottom: 89px;
+}
 .modnik_item:hover .item_img {
   filter: brightness(40%);
 }
@@ -455,6 +464,48 @@ details > summary {
   color: $colorStyle;
   line-height: 20px;
   font-family: "Lato";
+}
+.main_content {
+  position: relative;
+  display: flex;
+}
+.description_main {
+  position: absolute;
+  height: 600px;
+  z-index: 5;
+  display: flex;
+  top: -50px;
+
+  align-items: center;
+  flex-direction: column;
+  background: #ffffff;
+  border: 1px solid #eaeaea;
+}
+.collection {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  padding-top: 64px;
+  color: #f16d7f;
+}
+.description_main {
+  width: 1141px;
+}
+.divider_one {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  background: #ef5b70;
+}
+.divider_two {
+  margin-top: 65px;
+  margin-bottom: 65px;
+}
+.collection {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
 }
 .modnik_txt {
   padding: 28px 16px 20px;
@@ -534,7 +585,7 @@ article {
   justify-content: space-between;
   align-items: center;
 
-  &__left {
+  &_left {
     font-family: "Lato";
     text-align: center;
     display: flex;
@@ -542,7 +593,7 @@ article {
     align-items: center;
     justify-content: center;
   }
-  &__left_p {
+  &_left_p {
     font-family: "Lato";
     width: 360px;
     font-style: normal;
@@ -552,12 +603,12 @@ article {
     padding-top: 40px;
     color: #222222;
   }
-  &__right {
+  &_right {
     text-align: center;
     display: flex;
     flex-direction: column;
   }
-  &__right_p {
+  &_right_p {
     font-family: "Lato";
     display: flex;
     flex-direction: column;
