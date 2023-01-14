@@ -475,7 +475,7 @@ details > summary {
   z-index: 5;
   display: flex;
   top: -50px;
-
+  box-shadow: 0 0 19px pink;
   align-items: center;
   flex-direction: column;
   background: #ffffff;
@@ -508,7 +508,9 @@ details > summary {
   font-size: 14px;
   line-height: 17px;
   text-align: center;
-
+  width: 550px;
+  padding-bottom: 32px;
+  padding-top: 37px;
   color: #5e5e5e;
 }
 
@@ -550,7 +552,14 @@ details > summary {
 }
 .description_filter_point {
   list-style-type: none;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6f6e6e;
 }
+
 .modnik_txt {
   padding: 28px 16px 20px;
 }
