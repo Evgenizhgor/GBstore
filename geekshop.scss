@@ -560,6 +560,37 @@ details > summary {
   color: #6f6e6e;
 }
 
+.description_button_name {
+  padding-left: 23px;
+  padding-right: 10px;
+}
+.description_footer_button {
+  margin-top: 50px;
+}
+.description_button_icon {
+  border: 1px solid;
+  height: 47px;
+  width: 211px;
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+  align-content: center;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  flex-wrap: wrap;
+  font-size: 16px;
+  line-height: 19px;
+
+  fill: $colorStyle;
+  &:hover {
+    fill: $colorSelect;
+  }
+}
+.button_add_to_cart {
+  padding-left: 23px;
+}
+
 .modnik_txt {
   padding: 28px 16px 20px;
 }
