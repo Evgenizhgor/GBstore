@@ -474,6 +474,9 @@ details > summary {
   width: 360px;
   background-color: #f8f8f8;
 }
+.modnik_item:hover {
+  transform: scale(1.02);
+}
 
 .modnik_add {
   display: none;
