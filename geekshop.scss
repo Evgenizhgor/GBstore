@@ -1,4 +1,5 @@
-@charset "UTF-8";
+$colorSelect: #f1e4e6;
+$colorStyle: #f16d7f;
 header {
   background: #222222;
   height: 75px;
@@ -6,11 +7,9 @@ header {
   align-items: center;
   justify-content: space-between;
 }
-
 .photo {
   height: 724px;
 }
-
 .photo_select {
   display: flex;
   height: 777px;
@@ -18,7 +17,6 @@ header {
   align-items: center;
   background: #f7f7f7;
 }
-
 .arrow_left {
   background: rgba(42, 42, 42, 0.15);
   width: 47px;
@@ -27,11 +25,10 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  &:hover {
+    fill: #f16d7f;
+  }
 }
-.arrow_left:hover {
-  fill: #f16d7f;
-}
-
 .arrow_right {
   display: flex;
   justify-content: center;
@@ -40,24 +37,21 @@ header {
   width: 47px;
   height: 47px;
   fill: #000000;
-}
-.arrow_right:hover {
-  fill: #f16d7f;
+  &:hover {
+    fill: #f16d7f;
+  }
 }
 
 .center {
   padding-left: calc(50% - 570px);
   padding-right: calc(50% - 570px);
 }
-
 .search {
   margin-left: 20px;
 }
-
 .header_right li:not(:last-child) {
   margin-right: 33px;
 }
-
 .header_right {
   display: flex;
   align-items: center;
@@ -67,28 +61,22 @@ header {
 .menu_button {
   display: block;
   cursor: pointer;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
 }
-
 .link_nav {
   text-decoration: none;
   color: #636363;
 }
-
 .features {
   display: flex;
   padding-top: 51px;
   padding-bottom: 64px;
   position: relative;
 }
-
 .features_block {
   display: block;
   position: relative;
 }
-
 summary {
   display: block;
   list-style: none;
@@ -98,50 +86,47 @@ summary {
 summary::-webkit-details-marker {
   display: none;
 }
-
 .one {
   width: 35%;
 }
-
 .two {
   width: 65%;
 }
-
 .filter {
   width: 35%;
   position: relative;
   z-index: 2;
-}
-.filter_button {
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 17px;
-  color: #000000;
-  cursor: pointer;
-  position: absolute;
-  z-index: 5;
-}
-.filter_img {
-  margin-left: 11px;
-  cursor: pointer;
-}
-.filter_category {
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
-  color: #f16d7f;
-  padding-left: 11px;
-  border-left: #f16d7f 4px solid;
-  border-bottom: 1px solid #ebebeb;
-  height: 37px;
-  line-height: 37px;
-  cursor: pointer;
-}
 
+  &_button {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    cursor: pointer;
+    position: absolute;
+    z-index: 5;
+  }
+  &_img {
+    margin-left: 11px;
+    cursor: pointer;
+  }
+  &_category {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: $colorStyle;
+    padding-left: 11px;
+    border-left: $colorStyle 4px solid;
+    border-bottom: 1px solid #ebebeb;
+    height: 37px;
+    line-height: 37px;
+    cursor: pointer;
+  }
+}
 .filter_box {
   position: absolute;
   z-index: 1;
@@ -150,19 +135,16 @@ summary::-webkit-details-marker {
   width: 300px;
   background: white;
   padding-top: 50px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px rgb(0 0 0 / 50%);
 }
-
 .filter[open] .filter_button {
-  color: #f16d7f;
+  color: $colorStyle;
 }
-
 .filter[open] .filter_img {
-  fill: #f16d7f;
+  fill: $colorStyle;
 }
-
 .filter_link:hover {
-  color: #f16d7f;
+  color: $colorStyle;
 }
 
 .filter[open] {
@@ -177,7 +159,6 @@ summary::-webkit-details-marker {
   padding-top: 36px;
   padding-left: 11px;
 }
-
 .filter_link {
   font-family: "Lato";
   font-style: normal;
@@ -188,14 +169,13 @@ summary::-webkit-details-marker {
   text-decoration: none;
   cursor: pointer;
 }
-
 .checkbox_size {
   list-style-type: none;
   background: #ffffff;
   flex-direction: column;
   position: absolute;
   z-index: 2;
-  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  box-shadow: 6px 4px 35px rgb(0 0 0 / 21%);
   width: 79px;
   height: 103px;
   padding-top: 10px;
@@ -204,13 +184,11 @@ summary::-webkit-details-marker {
   left: -10px;
   top: 22px;
 }
-
 .size_name {
   padding-left: 22px;
   padding-bottom: 10px;
   display: flex;
 }
-
 .size_item {
   padding-left: 5px;
 }
@@ -218,11 +196,9 @@ summary::-webkit-details-marker {
 .features_button {
   cursor: pointer;
 }
-
 .feature_text {
   margin-right: 10px;
 }
-
 .features_list {
   margin-right: 27px;
   font-family: Lato;
@@ -233,42 +209,35 @@ summary::-webkit-details-marker {
   color: #6f6e6e;
   list-style-type: none;
 }
-
 .product_search {
   display: flex;
   width: 65%;
 }
-
 details > summary {
   list-style: none;
 }
-
 .nav_list {
   display: flex;
 }
-
 .nav_list:not(:first-of-type)::before {
   padding: 0 5px;
   color: #ccc;
-  content: "/ ";
+  content: "/\00a0";
 }
-
 .page {
   text-decoration: none;
   color: #c4c4c4;
   line-height: 19.2px;
   font-size: 16px;
   font-family: "Lato";
+  &:hover {
+    color: $colorStyle;
+  }
 }
-.page:hover {
-  color: #f16d7f;
-}
-
 .central_content {
   display: flex;
   flex-direction: column;
 }
-
 .footer_product {
   display: flex;
   align-items: center;
@@ -283,23 +252,22 @@ details > summary {
   border-radius: 4px;
   padding: 0 16px 0 16px;
 }
-
 .product_number {
   list-style-type: none;
   display: flex;
   align-items: center;
   font-weight: 300;
 }
-
 .product_next {
   list-style-type: none;
   fill: #222222;
   display: flex;
   align-items: center;
   cursor: pointer;
-}
-.product_next:hover {
-  fill: #f16d7f;
+
+  &:hover {
+    fill: $colorStyle;
+  }
 }
 
 .header_location_list {
@@ -309,46 +277,39 @@ details > summary {
 }
 
 .new {
-  color: #f16d7f;
+  color: $colorStyle;
 }
-
 .promo {
-  background: #f1e4e6;
+  background: $colorSelect;
   display: flex;
   padding-left: calc(50% - 800px);
   padding-right: calc(50% - 800px);
 }
-
 .page_title {
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 148px;
-  background: #f1e4e6;
+  background: $colorSelect;
 }
-
 .new_arriv {
   font-family: "Lato";
   color: #f26376;
   font-weight: 400;
 }
-
 .promo_img {
   width: 50%;
   display: flex;
 }
-
 .promo_txt {
   width: 50%;
 }
-
 .mate {
   width: 100%;
 }
-
 .promo_content {
   margin-top: 40%;
-  border-left: 12px solid #f16d7f;
+  border-left: 12px solid $colorStyle;
   padding-left: 18px;
 }
 
@@ -356,7 +317,6 @@ details > summary {
   margin: 0;
   padding: 0;
 }
-
 .promo_heading {
   font-family: "Lato";
   font-style: normal;
@@ -364,7 +324,6 @@ details > summary {
   font-size: 48px;
   line-height: 58px;
 }
-
 .promo_para {
   font-family: "Lato";
   font-style: normal;
@@ -375,31 +334,26 @@ details > summary {
 }
 
 .dsl {
-  color: #f16d7f;
+  color: $colorStyle;
 }
-
 .sale {
   padding-top: 54px;
   padding-bottom: 96px;
 }
-
 .top {
   display: flex;
+
   padding-bottom: 30px;
 }
-
 .top_img {
   width: 100%;
 }
-
 .sale_item:not(:last-child) {
   margin-right: 30px;
 }
-
 .sale_item {
   position: relative;
 }
-
 .sale_text {
   position: absolute;
   top: 0;
@@ -411,11 +365,9 @@ details > summary {
   justify-content: center;
   align-items: center;
 }
-
 .big_sale {
   position: relative;
 }
-
 .sale_p {
   color: #ffffff;
   text-align: center;
@@ -424,60 +376,54 @@ details > summary {
   line-height: 19px;
   font-weight: normal;
 }
-
 .sale_h {
-  color: #f16d7f;
+  color: $colorStyle;
   font-family: "Lato";
   font-size: 24px;
   line-height: 29px;
   text-align: center;
   font-weight: bold;
 }
-
 .price_head {
   font-family: "Lato";
   font-size: 30px;
   text-align: center;
 }
-
 .price_p {
   font-family: "Lato";
+
   text-align: center;
   color: #9f9f9f;
 }
-
 .price {
   padding-bottom: 46px;
 }
-
 .modniki {
   display: flex;
+
   flex-wrap: wrap;
   gap: 30px;
 }
-
 .modniki_productpage {
   display: flex;
   padding-bottom: 98px;
   padding-top: 680px;
+
   flex-wrap: wrap;
   gap: 30px;
   padding-bottom: 89px;
 }
-
 .modnik_item:hover .item_img {
   filter: brightness(40%);
 }
-
 .modnik_item {
   position: relative;
   width: 360px;
   background-color: #f8f8f8;
+  &:hover {
+    transform: scale(1.02);
+  }
 }
-.modnik_item:hover {
-  transform: scale(1.02);
-}
-
 .modnik_add {
   display: none;
   justify-content: center;
@@ -496,24 +442,19 @@ details > summary {
   top: 188px;
   left: 111px;
 }
-
 .modnik_add:hover {
   box-shadow: 0 0 7px #fff;
 }
-
 .modnik_item:hover .modnik_add {
   display: flex;
 }
-
 .modnik_add::before {
   padding-right: 11px;
   content: url(img/icons/shopper.svg);
 }
-
 .modnik_img {
   width: 100%;
 }
-
 .wall {
   font-size: 15px;
   font-weight: 400;
@@ -522,18 +463,15 @@ details > summary {
   color: #000000;
   font-family: "Lato";
 }
-
 .pricez {
-  color: #f16d7f;
+  color: $colorStyle;
   line-height: 20px;
   font-family: "Lato";
 }
-
 .main_content {
   position: relative;
   display: flex;
 }
-
 .description_main {
   position: absolute;
   height: 600px;
@@ -546,16 +484,15 @@ details > summary {
   background: #ffffff;
   border: 1px solid #eaeaea;
 }
-
 .description_summ {
   font-family: "Lato";
   font-style: normal;
   font-weight: 300;
   font-size: 24px;
   line-height: 29px;
-  color: #f16d7f;
-}
 
+  color: $colorStyle;
+}
 .description_price {
   font-family: Lato;
   font-style: normal;
@@ -589,38 +526,33 @@ details > summary {
   padding-top: 64px;
   color: #f16d7f;
 }
-
 .description_main {
   width: 1141px;
 }
-
 .divider_one {
   margin-top: 12px;
   margin-bottom: 12px;
   background: #ef5b70;
   width: 63px;
 }
-
 .divider_two {
   margin-top: 65px;
   margin-bottom: 65px;
   width: 642px;
   background: #eaeaea;
 }
-
 .cheap_bch {
   font-family: "Lato";
   font-style: normal;
   font-weight: 300;
   font-size: 18px;
   line-height: 22px;
+
   color: #4d4d4d;
 }
-
 .description_filter {
   display: flex;
 }
-
 .description_filter_point {
   list-style-type: none;
   font-family: Lato;
@@ -635,11 +567,9 @@ details > summary {
   padding-left: 23px;
   padding-right: 10px;
 }
-
 .description_footer_button {
   margin-top: 50px;
 }
-
 .description_button_icon {
   border: 1px solid;
   height: 47px;
@@ -654,12 +584,12 @@ details > summary {
   flex-wrap: wrap;
   font-size: 16px;
   line-height: 19px;
-  fill: #f16d7f;
-}
-.description_button_icon:hover {
-  fill: #f1e4e6;
-}
 
+  fill: $colorStyle;
+  &:hover {
+    fill: $colorSelect;
+  }
+}
 .button_add_to_cart {
   padding-left: 23px;
 }
@@ -679,50 +609,43 @@ details > summary {
   text-decoration: none;
   color: #f26376;
 }
-
 .modnik_footer {
   display: flex;
   justify-content: center;
   margin-top: 50px;
 }
-
 .modnik_button:hover {
   color: white;
   background: #f26376;
   border-color: #f26376;
 }
-
 .item_img {
   width: 100%;
 }
-
 .personal_info {
   display: flex;
   background: #222224;
   height: 341px;
 }
-
 .header_personal {
   color: #fbfbfb;
   font-family: "Lato";
   font-size: 19.9px;
   margin-top: 28px;
 }
-
 .personal_text {
   display: flex;
   width: 100%;
+
   justify-content: space-between;
   align-items: center;
 }
-
 .personal_body {
   color: #fbfbfb;
   font-family: "Lato";
   font-size: 14px;
   margin-top: 28px;
 }
-
 article {
   text-align: center;
   width: 360px;
@@ -735,55 +658,56 @@ article {
 
 .subscribe {
   height: 448px;
+
   background: url(img/photo/photobeach.png) bottom;
   background-size: cover;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-.subscribe_left {
-  font-family: "Lato";
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.subscribe_left_p {
-  font-family: "Lato";
-  width: 360px;
-  font-style: normal;
-  font-size: 20px;
-  line-height: 24px;
-  text-align: center;
-  padding-top: 40px;
-  color: #222222;
-}
-.subscribe_right {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-}
-.subscribe_right_p {
-  font-family: "Lato";
-  display: flex;
-  flex-direction: column;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 40.13px;
-  padding-bottom: 32px;
-}
-.subscribe .ital {
-  font-style: italic;
-}
 
+  &_left {
+    font-family: "Lato";
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  &_left_p {
+    font-family: "Lato";
+    width: 360px;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    padding-top: 40px;
+    color: #222222;
+  }
+  &_right {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  &_right_p {
+    font-family: "Lato";
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 40.13px;
+    padding-bottom: 32px;
+  }
+
+  .ital {
+    font-style: italic;
+  }
+}
 .smaller {
   font-family: "Lato";
   font-weight: normal;
   font-size: 18px;
   line-height: 30.1px;
 }
-
 .subscribe_email {
   display: flex;
   justify-content: center;
@@ -798,21 +722,18 @@ article {
   font-size: 14px;
   padding-left: 22px;
 }
-
 .submit_subs {
   border: none;
-  background: #f16d7f;
+  background: $colorStyle;
   border-radius: 0 25px 25px 0;
   width: 100px;
   height: 50px;
   font-size: 14px;
   line-height: 17px;
 }
-
 .submit_subs:hover {
   background: #e05c6e;
 }
-
 .sub {
   color: #ffffff;
   width: 100%;
@@ -821,7 +742,6 @@ article {
   flex-direction: column;
   justify-content: center;
 }
-
 .contact_us {
   background: #222224;
   display: flex;
@@ -829,19 +749,15 @@ article {
   justify-content: space-between;
   height: 79px;
 }
-
 .aiirights_p {
   color: #fbfbfb;
 }
-
 .social_left {
   font-family: "Lato";
 }
-
 .social_right {
   display: flex;
 }
-
 .social_button {
   display: flex;
   justify-content: center;
@@ -851,16 +767,13 @@ article {
   fill: #000000;
   background: #ffffff;
 }
-
 .social_button:not(:last-child) {
   margin-right: 8px;
 }
-
 .social_button:hover {
-  background: #f16d7f;
+  background: $colorStyle;
   fill: #ffffff;
 }
-
 .header_location {
   display: flex;
 }
@@ -868,7 +781,6 @@ article {
 .nav_list {
   font-family: "Lato";
 }
-
 .navigation_header {
   height: 148px;
   background: #f8f3f4;
@@ -881,7 +793,6 @@ article {
   font-family: "Lato";
   padding-bottom: 96px;
 }
-
 .gender {
   border: none;
   font-style: normal;
@@ -892,7 +803,6 @@ article {
   margin-top: 10px;
   color: #000000;
 }
-
 .reg_name {
   padding-bottom: 20px;
   font-family: "Lato";
@@ -900,47 +810,42 @@ article {
   font-weight: 300;
   font-size: 16px;
   line-height: 19px;
+
   color: #222222;
 }
-
 .nav_title {
   font-family: "Lato";
   font-weight: 400;
   font-size: 24px;
   line-height: 28.8px;
-  color: #f16d7f;
+  color: $colorStyle;
   position: absolute;
 }
-
 .reg_right {
   width: 652px;
 }
-
 .regform_main {
   display: flex;
   justify-content: space-between;
 }
-
 .gender_radio:not(:first-child) {
   margin-left: 20px;
 }
-
 .gender_choose {
   margin-right: 10px;
 }
-
 .reg_submit {
   width: 167px;
   height: 50px;
-  background: #f16d7f;
+  background: $colorStyle;
   border: none;
   text-align: center;
 }
-
 .reg_description {
   padding-top: 15px;
   padding-bottom: 39px;
   width: 360px;
+
   font-style: normal;
   font-weight: 300;
   font-size: 13px;
@@ -961,16 +866,13 @@ article {
   padding-left: 17px;
   box-sizing: border-box;
 }
-
 .registration_item:not(:last-of-type) {
   margin-bottom: 21px;
 }
-
 .reg_left {
   display: flex;
   flex-direction: column;
 }
-
 .reg_p_text {
   font-family: "Lato";
   font-weight: 300;
@@ -978,7 +880,6 @@ article {
   line-height: 24.4px;
   padding-bottom: 21px;
 }
-
 .reg_text {
   font-style: normal;
   font-weight: 300;
@@ -988,7 +889,6 @@ article {
   padding-bottom: 22px;
   color: #000000;
 }
-
 .loyal_description {
   display: flex;
   font-style: normal;
@@ -998,15 +898,12 @@ article {
   padding-bottom: 16px;
   color: #000000;
 }
-
 .ok {
   margin-right: 23px;
 }
-
 .reg_loyal {
   display: flex;
 }
-
 .registration_contact {
   font-style: normal;
   font-weight: 300;
@@ -1014,4 +911,4 @@ article {
   line-height: 19px;
   padding-bottom: 18px;
   color: #222222;
-}/*# sourceMappingURL=geekshop.css.map */
+}
