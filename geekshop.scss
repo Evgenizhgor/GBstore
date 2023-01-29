@@ -949,6 +949,7 @@ article {
 }
 .main_cart_left {
   display: block;
+  width: 50%;
 }
 .cart_item {
   display: flex;
@@ -975,4 +976,8 @@ article {
 .cart_buttons {
   display: flex;
   justify-content: space-between;
+}
+.cartbutton {
+  height: 50px;
+  width: 225px;
 }
