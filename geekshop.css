@@ -678,6 +678,7 @@ details > summary {
   text-align: center;
   text-decoration: none;
   color: #f26376;
+  font-family: "Lato";
 }
 
 .modnik_footer {
@@ -1014,4 +1015,48 @@ article {
   line-height: 19px;
   padding-bottom: 18px;
   color: #222222;
+}
+
+.title_cart {
+  height: 148px;
+  display: flex;
+  align-items: center;
+  background-color: #f8f3f4;
+}
+.title_cart_shop {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #f16d7f;
+}
+
+.photo_cart {
+  width: 262px;
+  height: 306px;
+}
+
+.cart_name {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #222222;
+}
+.cart_name_link {
+  text-decoration: none;
+}
+
+.main_cart {
+  display: flex;
+}
+
+.main_cart_left {
+  display: block;
+}
+
+.cart_item {
+  display: flex;
 }/*# sourceMappingURL=geekshop.css.map */
