@@ -946,13 +946,16 @@ article {
 }
 .main_cart {
   display: flex;
+  padding-top: 96px;
+  justify-content: space-between;
 }
 .main_cart_left {
-  display: block;
-  width: 50%;
+  padding-bottom: 139px;
 }
 .cart_item {
   display: flex;
+  width: 652px;
+  height: 306px;
 }
 .signification {
   font-family: "Lato";
@@ -976,8 +979,56 @@ article {
 .cart_buttons {
   display: flex;
   justify-content: space-between;
+  margin-top: 72px;
 }
 .cartbutton {
   height: 50px;
   width: 225px;
+}
+.cart_checkout {
+  color: #ffffff;
+  border-radius: 0%;
+  width: 273px;
+  height: 50px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  font-style: normal;
+}
+.cart_buy {
+  background-color: $colorSelect;
+  width: 360px;
+  height: 214px;
+  margin-top: 57px;
+}
+.order_address {
+  width: 360px;
+  height: 45px;
+  font-family: "Lato";
+  padding-left: 17px;
+  margin-bottom: 21px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #b1b1b1;
+}
+.cart_submit {
+  width: 100px;
+  height: 34px;
+}
+.cart_right_title {
+  display: flex;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+  margin-bottom: 20px;
+}
+
+.cart_address {
+  display: flex;
+  flex-direction: column;
 }
