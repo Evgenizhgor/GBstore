@@ -1063,6 +1063,8 @@ article {
   display: flex;
   width: 652px;
   height: 306px;
+  margin-bottom: 35px;
+  box-shadow: 7px 18px 22px 2px #4a4a4a;
 }
 
 .signification {
@@ -1112,6 +1114,9 @@ article {
   width: 360px;
   height: 214px;
   margin-top: 57px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .order_address {
@@ -1130,6 +1135,12 @@ article {
 .cart_submit {
   width: 100px;
   height: 34px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 13px;
+  color: #4a4a4a;
 }
 
 .cart_right_title {
@@ -1146,4 +1157,52 @@ article {
 .cart_address {
   display: flex;
   flex-direction: column;
+}
+
+.sub_total {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  display: flex;
+  justify-content: space-between;
+  color: #4a4a4a;
+  padding-top: 39px;
+  padding-bottom: 12px;
+  padding-right: 23px;
+  width: 100px;
+  align-self: flex-end;
+}
+
+.grandtotal {
+  font-family: "Lato";
+  align-self: flex-end;
+  padding-right: 23px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  justify-content: space-between;
+  color: #222222;
+  width: 110px;
+}
+.grandtotal_price {
+  color: #f16d7f;
+}
+
+hr {
+  background: #e2e2e2;
+  margin-top: 21px;
+  width: 275px;
+  margin-bottom: 11px;
+}
+
+.check {
+  display: flex;
+}
+
+.cart_text {
+  padding-left: 24px;
 }/*# sourceMappingURL=geekshop.css.map */
