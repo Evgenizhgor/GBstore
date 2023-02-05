@@ -562,8 +562,8 @@ details > summary {
 }
 .modnik_add:active {
   color: palevioletred;
-  -webkit-animation: slide-out-blurred-top 0.15s cubic-bezier(0.755, 0.05, 0.855, 0.06) both;
-          animation: slide-out-blurred-top 0.15s cubic-bezier(0.755, 0.05, 0.855, 0.06) both;
+  -webkit-animation: slide-out-blurred-top 0.55s cubic-bezier(0.755, 0.05, 0.855, 0.96) both;
+          animation: slide-out-blurred-top 0.55s cubic-bezier(0.755, 0.05, 0.855, 0.96) both;
 }
 
 .modnik_add:hover {
